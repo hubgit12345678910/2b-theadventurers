@@ -11,8 +11,8 @@ function updateScene(s) {
 			document.getElementById("scene_text").innerHTML = "You wake up in the middle of a forest. You find a backpack containing a wooden sword, a linen tunic, and a flask of water. Will you continue deeper into the forest, or walk towards a nearby lake?";
 			break;
 		case "s1":
-			document.getElementById("scene_title").innerHTML = "Walk into the forest";
-			document.getElementById("scene_text").innerHTML = "Walk into the lake";
+			document.getElementById("scene_title").innerHTML = "Deeper into the Forest";
+			document.getElementById("scene_text").innerHTML = "As you venture deeper into the forest, you fine a rusty, stone axe. Do you wish to chop down some trees?";
 			break;
 	}
 }
