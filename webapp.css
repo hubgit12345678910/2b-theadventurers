@@ -6,5 +6,8 @@ body {
 	background-image: url(Background.gif);
 	color:white;
 	font-size:20px;
+	text-align:left;
+}
+#choices {
 	text-align:center;
 }
