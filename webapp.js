@@ -46,6 +46,21 @@ function updateScene(s) {
 		case "s2":
 			document.getElementById("scene_title").innerHTML = "Towards the lake";
 			document.getElementById("scene_text").innerHTML = "As you walk towards the lake, you see a little canoe with oars. Do you wish to steer the boat into the lake?";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Ride the boat into the lake";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s3");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "ignore the boat and keep on walking";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s4");
+			});
+	
+			
 			break;
 	}
 }
