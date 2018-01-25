@@ -29,7 +29,18 @@ function updateScene(s) {
 			document.getElementById("scene_title").innerHTML = "Deeper into the Forest";
 			document.getElementById("scene_text").innerHTML = "As you venture deeper into the forest, you fine a rusty, stone axe. Do you wish to chop down some trees?";
 	
-	
+		// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Chop down trees";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s3");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Leave the axe and venture on";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s4");
+			});
 	
 			break;
 		case "s2":
