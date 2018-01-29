@@ -15,14 +15,17 @@ body {
 		color:white;
 	
 	}
+	#choices button {
+		background-color:black;
+		margin:3px inherit;
+		padding:4px inherit;
+		border:inset;
+		border-color:gray;
+		text-align:center;
+		color:skyblue;
+		font-size:16px;
+	}
 	#choices {
 		float:inherit;
-		background-color:black;
-		margin:8px inherit;
-		padding:5px inherit;
-		border:inset;
-		border-color:blue;
 		text-align:center;
-		
-		
 	}
