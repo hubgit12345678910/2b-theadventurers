@@ -96,5 +96,23 @@ function updateScene(s) {
 				updateScene("s9");
 			});
 			break;
+			case "s5":
+		
+			document.getElementById("scene_title").innerHTML = "Row-Row-Row you boat";
+			document.getElementById("scene_text").innerHTML = "After a few hours of intense rowing, you hear a crunch under your boat. As your boat starts to fill up with water, you suddenly realize that you are close to land";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Abandon the boat and swim to land";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s1");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Fix the boat with you wood";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
 	}
 }
