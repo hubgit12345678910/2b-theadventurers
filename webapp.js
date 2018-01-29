@@ -51,13 +51,13 @@ function updateScene(s) {
 			
 			document.getElementById("btn1").innerHTML = "Ride the boat into the lake";
 			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s3");
+				updateScene("s5");
 			});
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "ignore the boat and keep on walking";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s4");
+				updateScene("s6");
 			});
 	
 			
