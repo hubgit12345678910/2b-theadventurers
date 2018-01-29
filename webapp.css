@@ -18,7 +18,8 @@ body {
 	#choices {
 		float:inherit;
 		background-color:black;
-		margin:24px;
+		margin:6px auto;
+		padding:5px inherit;
 		border:inset;
 		text-align:center;
 		
