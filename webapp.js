@@ -55,12 +55,28 @@ function updateScene(s) {
 			});
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "ignore the boat and keep on walking";
+			document.getElementById("btn2").innerHTML = "Ignore the boat and keep on walking";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s6");
 			});
-	
+			break;
+			case "s3":
+		
+			document.getElementById("scene_title").innerHTML = "The Beginning";
+			document.getElementById("scene_text").innerHTML = "You wake up in the middle of a forest. You find a backpack containing a wooden sword, a linen tunic, and a flask of water. Will you continue deeper into the forest, or walk towards a nearby lake?";
 			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Walk into the forest";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s1");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Head towards the nearby lake";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s2");
+			});
 			break;
 	}
 }
