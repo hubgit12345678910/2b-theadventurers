@@ -62,20 +62,38 @@ function updateScene(s) {
 			break;
 			case "s3":
 		
-			document.getElementById("scene_title").innerHTML = "";
-			document.getElementById("scene_text").innerHTML = "You wake up in the middle of a forest. You find a backpack containing a wooden sword, a linen tunic, and a flask of water. Will you continue deeper into the forest, or walk towards a nearby lake?";
+			document.getElementById("scene_title").innerHTML = "Chopping down the trees";
+			document.getElementById("scene_text").innerHTML = "When you finish chopping down the trees, your hands feel burned and they are throbbing, but the good thing is that you collect 5 pieces of wood. Then, you head deeper into the forest.";
 			
 			// change the first button
 			
-			document.getElementById("btn1").innerHTML = "Walk into the forest";
+			document.getElementById("btn1").innerHTML = "Go deeper into the forest";
 			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s1");
+				updateScene("s4");
 			});
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Head towards the nearby lake";
+			document.getElementById("btn2").innerHTML = "Same choice 'cause YOU AIN'T GOT A CHOICE!";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s2");
+				updateScene("s4");
+			});
+			break;
+			case "s4":
+		
+			document.getElementById("scene_title").innerHTML = "Leave the axe";
+			document.getElementById("scene_text").innerHTML = "As you walk deeper into the forest, you find a dead deer carcass. Would you like to skin the deer with your sword?";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Skin the deer";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s8");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Leave the deer";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s9");
 			});
 			break;
 	}
