@@ -8,9 +8,19 @@ body {
 	font-size:20px;
 	text-align:left;
 }
-#choices {
-	text-align:center;
-	color:red;
 
+	#scene_text {
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+		font-size:22px;
+		color:white;
 	
-}
+	}
+	#choices {
+		float:inherit;
+		background-color:black;
+		margin:24px;
+		border:inset;
+		text-align:center;
+		
+		
+	}
