@@ -7,27 +7,31 @@ body {
 	color:white;
 	font-size:20px;
 	text-align:left;
+	background-size: 2000px 1000px;
 }
-
+ 
 	#scene_text {
 		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 		font-size:22px;
 		color:white;
+		
 	
 	}
 	#choices button {
 		background-color:maroon;
 		margin:6px inherit;
-		padding:4px ;
+		padding:4px 5px;
 		border:groove;
 		border-color:gray;
 		text-align:center;
 		color:white;
-		font-size:13px;
+		font-size:16px;
 		border-radius: 15%;
+		
 
 	}
 	#choices {
 		position:inherit;
 		text-align:center;
+		
 	}
