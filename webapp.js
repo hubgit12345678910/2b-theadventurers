@@ -73,9 +73,9 @@ function updateScene(s) {
 			});
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Same choice 'cause YOU AIN'T GOT A CHOICE!";
+			document.getElementById("btn2").innerHTML = "Go back and head towards the lake";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s4");
+				updateScene("s2");
 			});
 			break;
 			case "s4":
@@ -105,7 +105,7 @@ function updateScene(s) {
 			
 			document.getElementById("btn1").innerHTML = "Abandon the boat and swim to land";
 			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s1");
+				updateScene("s10");
 			});
 			// change the second button
 			
@@ -114,5 +114,42 @@ function updateScene(s) {
 				updateScene("s6");
 			});
 			break;
+			case "s6":
+		
+			document.getElementById("scene_title").innerHTML = "Fixing the Boat";
+			document.getElementById("scene_text").innerHTML = "You use your wood to fix your boat. You row for a few more minutes and see the island that you suspected to be near. Would you like to row your boat to shore";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Row to shore";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s10");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Keep Rowing";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
+			case "s6":
+		
+			document.getElementById("scene_title").innerHTML = "On the island";
+			document.getElementById("scene_text").innerHTML = "You finally reach the island. You are extremely exhausted and you see a cave. Would you like to sleep in the cave and start a fire or would you like to make your own shelter?";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Sleep in the cave";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s10");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Make your own shelter";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
+			
 	}
 }
