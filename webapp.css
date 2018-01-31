@@ -17,16 +17,17 @@ body {
 	}
 	#choices button {
 		background-color:maroon;
-		margin:3px inherit;
-		padding:6px inherit;
-		border:inset;
+		margin:6px inherit;
+		padding:4px ;
+		border:groove;
 		border-color:gray;
 		text-align:center;
 		color:white;
-		font-size:14px;
-		
+		font-size:13px;
+		border-radius: 15%;
+
 	}
 	#choices {
-		float:inherit;
+		position:inherit;
 		text-align:center;
 	}
