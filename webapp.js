@@ -63,7 +63,7 @@ function updateScene(s) {
 			case "s3":
 		
 			document.getElementById("scene_title").innerHTML = "Chopping down the trees";
-			document.getElementById("scene_text").innerHTML = "When you finish chopping down the trees, your hands feel burned and they are throbbing, but the good thing is that you collect 5 pieces of wood. Then, you head deeper into the forest.";
+			document.getElementById("scene_text").innerHTML = "When you finish chopping down the trees, your hands feel burned and they are throbbing, but the good thing is that you collect 5 pieces of wood. Would you like to head deeper into the or head back to the lake?";
 			
 			// change the first button
 			
@@ -80,7 +80,7 @@ function updateScene(s) {
 			break;
 			case "s4":
 		
-			document.getElementById("scene_title").innerHTML = "Leave the axe";
+			document.getElementById("scene_title").innerHTML = "The Dead Deer Carcass";
 			document.getElementById("scene_text").innerHTML = "As you walk deeper into the forest, you find a dead deer carcass. Would you like to skin the deer with your sword?";
 			
 			// change the first button
@@ -146,6 +146,23 @@ function updateScene(s) {
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the wood";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
+			case "s8":
+			document.getElementById("scene_title").innerHTML = "Skinning the deer";
+			document.getElementById("scene_text").innerHTML = "Before you skin the deer, you check on the insides of ";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Sleep in the cave";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s10");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Make your own shelter";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s6");
 			});
