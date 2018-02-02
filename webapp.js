@@ -22,6 +22,8 @@ function updateScene(s) {
 			document.getElementById("btn2").innerHTML = "Head towards the nearby lake";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s2");
+				document.getElementById("ach1").innerHTML = "#1: Walk towards lake";
+				alert("You got an achievement!");
 			});
 			break;
 		case "s1":
