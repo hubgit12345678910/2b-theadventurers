@@ -22,8 +22,6 @@ function updateScene(s) {
 			document.getElementById("btn2").innerHTML = "Head towards the nearby lake";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s2");
-				document.getElementById("ach1").innerHTML = "#1: Walk towards lake";
-				alert("You got an achievement!");
 			});
 			break;
 		case "s1":
@@ -54,6 +52,8 @@ function updateScene(s) {
 			document.getElementById("btn1").innerHTML = "Ride the boat into the lake";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s5");
+				document.getElementById("ach1").innerHTML = "#1: All aboard the boat";
+				alert("You got an achievement!");
 			});
 			// change the second button
 			
