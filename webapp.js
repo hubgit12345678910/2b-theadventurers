@@ -132,8 +132,25 @@ function updateScene(s) {
 				updateScene("s6");
 			});
 			break;
-			case "s6":
+			case "s7":
 		
+			document.getElementById("scene_title").innerHTML = "Trekking on";
+			document.getElementById("scene_text").innerHTML = "As you walk past the boat, you head an explosion behind you. You look behind you and realize it was the boat. Would you like to collect the wood?";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Collect the wood";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s10");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Leave the wood";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
+			case "s10":
 			document.getElementById("scene_title").innerHTML = "On the island";
 			document.getElementById("scene_text").innerHTML = "You finally reach the island. You are extremely exhausted and you see a cave. Would you like to sleep in the cave and start a fire or would you like to make your own shelter?";
 			
