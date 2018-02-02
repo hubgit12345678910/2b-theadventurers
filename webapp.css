@@ -15,9 +15,8 @@ body {
 		font-size:22px;
 		color:white;
 		float:left;
-		width:600px
+		width:800px
 		
-	
 	}
 	#title {
 		background-color:black;
@@ -39,15 +38,14 @@ body {
 		border-radius: 15%;
 		float:left;
 		
-
 	}
-	#choices {
-		position:inherit;
-		text-align:center;
-		
-	}
-	#achivements {
+	#achievements {
 		float:right;
-		width:300px;
-		
+		width: 200px;
 	}
+	
+	#choices {
+				text-align:center;
+	}
+	
+	
