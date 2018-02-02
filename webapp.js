@@ -160,19 +160,36 @@ function updateScene(s) {
 			break;
 			case "s8":
 			document.getElementById("scene_title").innerHTML = "Skinning the deer";
-			document.getElementById("scene_text").innerHTML = "Before you skin the deer, you check on the insides of ";
+			document.getElementById("scene_text").innerHTML = "Before you skin the deer, you see a black wormhole in the bush right next to it. Would you like to check the wormhole out?";
 			
 			// change the first button
 			
-			document.getElementById("btn1").innerHTML = "Sleep in the cave";
+			document.getElementById("btn1").innerHTML = "Shine you flashlight in the wormhole";
 			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s10");
+				updateScene("s11");
 			});
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Make your own shelter";
+			document.getElementById("btn2").innerHTML = "Leave the deer";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
+				updateScene("s9");
+			});
+			break;
+			case "s9":
+			document.getElementById("scene_title").innerHTML = "The wormhole";
+			document.getElementById("scene_text").innerHTML = "You slowly back away from the wormhole and continue deeper into the forest. You see another small wormhole on the ground. You hear whirring noises that might come from some sort of machine inside. What will you do?";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Drop a rock into the wormhole";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s12");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Jump into the wprmhole";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s13");
 			});
 			break;
 			case "s10":
