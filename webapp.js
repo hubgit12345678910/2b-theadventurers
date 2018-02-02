@@ -52,8 +52,8 @@ function updateScene(s) {
 			document.getElementById("btn1").innerHTML = "Ride the boat into the lake";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s5");
-				document.getElementById("ach1").innerHTML = "#1: All aboard the boat";
-				alert("You got an achievement!");
+				document.getElementById("ach1").innerHTML = "#1: All Aboard!";
+				alert("Achievment 001: All Aboard! First time sailing? Good luck me matey!");
 			});
 			// change the second button
 			
@@ -90,6 +90,8 @@ function updateScene(s) {
 			document.getElementById("btn1").innerHTML = "Skin the deer";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s8");
+				document.getElementById("ach2").innerHTML = "#2: Hunter?";
+				alert("Achievment 002: Hunter? More like tanner!");
 			});
 			// change the second button
 			
@@ -108,12 +110,16 @@ function updateScene(s) {
 			document.getElementById("btn1").innerHTML = "Abandon the boat and swim to land";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s10");
+				document.getElementById("ach3").innerHTML = "#3: Olympic Swimmer";
+				alert("Achievment 003: Olympic Swimmer. Don't get eaten by sharks!");
 			});
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Fix the boat with you wood";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s6");
+				document.getElementById("ach4").innerHTML = "#4:Carpenter";
+				alert("Achievment 004: Carpenter. ");
 			});
 			break;
 			case "s6":
