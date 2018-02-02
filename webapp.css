@@ -12,7 +12,7 @@ body {
  
 	#scene_text {
 		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-		font-size:22px;
+		font-size:24px;
 		color:white;
 		float:left;
 		width:800px
@@ -32,12 +32,10 @@ body {
 		padding:4px 5px;
 		border:groove;
 		border-color:gray;
-		text-align:center;
 		color:white;
 		font-size:16px;
 		border-radius: 15%;
-		float:left;
-		
+		float:inherit;
 	}
 	#achievements {
 		float:right;
@@ -45,7 +43,8 @@ body {
 	}
 	
 	#choices {
-				text-align:center;
+		text-align:center;
+		clear:both
 	}
 	
 	
