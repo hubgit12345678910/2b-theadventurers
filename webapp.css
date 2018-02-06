@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
 
-	body {
-		font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
-		background-image: url(Background.gif);
-		color:white;
-		font-size:20px;
-		text-align:left;
-		background-size: 1920px 1080px;
-	}
+		body {
+			font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+			background-image: url(Background.gif);
+			color:white;
+			font-size:20px;
+			text-align:left;
+			background-size: 1920px 1080px;
+		}
 	 
 		#scene_text {
 			font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
