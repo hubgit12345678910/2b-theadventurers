@@ -209,6 +209,74 @@ function updateScene(s) {
 				updateScene("s6");
 			});
 			break;
+			case "s11":
+			document.getElementById("scene_title").innerHTML = "The mysterious hole";
+			document.getElementById("scene_text").innerHTML = "You shine you flashlight in the hole. The beam disappears without a trace. No reflection, no trace, just gone.";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Jump into the wormhole";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s13");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Drop a rock in and see what happens";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s12");
+			});
+			break;
+			case "s12":
+			document.getElementById("scene_title").innerHTML = "The Desperate Choice";
+			document.getElementById("scene_text").innerHTML = "You drop a rock that you found on the ground in the hole. You suddenly hear a growl that makes your blood run cold. Your heart beats rapidly as you slowly turn around. You see a bear!";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Jump into the wormhole";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s13");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
+			case "s12":
+			document.getElementById("scene_title").innerHTML = "The Desperate Choice";
+			document.getElementById("scene_text").innerHTML = "You drop a rock that you found on the ground in the hole. You suddenly hear a growl that makes your blood run cold. Your heart beats rapidly as you slowly turn around. You see a bear!";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Jump into the wormhole";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s13");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
+			case "s13":
+			document.getElementById("scene_title").innerHTML = "The White Room";
+			document.getElementById("scene_text").innerHTML = "When you jump into the wormhole, you feel a strange sensation, as if you were flying. As you land on the cold, hard marble floor, you see a bright room with a bunch of strange-looking machinery.";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s13");
+			});
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
+			break;
 			
 	}
 }
