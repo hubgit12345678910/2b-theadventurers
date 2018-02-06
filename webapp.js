@@ -14,15 +14,11 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Walk into the forest";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s1");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s1')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Head towards the nearby lake";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s2");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s2')");
 			break;
 		case "s1":
 		
@@ -32,15 +28,11 @@ function updateScene(s) {
 		// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Chop down trees";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s3");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s3')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the axe and venture on";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s4");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s4')");
 	
 			break;
 		case "s2":
@@ -50,35 +42,27 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Ride the boat into the lake";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s5");
-				document.getElementById("ach1").innerHTML = "#1: All Aboard!";
-				alert("Achievment 001: All Aboard! First time sailing? Good luck me matey!");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s5')");
+				
+			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Ignore the boat and keep on walking";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s6')");
 			break;
 			case "s3":
 		
 			document.getElementById("scene_title").innerHTML = "Chopping down the trees";
-			document.getElementById("scene_text").innerHTML = "When you finish chopping down the trees, your hands feel burned and they are throbbing, but the good thing is that you collect 5 pieces of wood. Would you like to head deeper into the or head back to the lake?";
+			document.getElementById("scene_text").innerHTML = "When you finish chopping down the trees, your hands feel burned and they are throbbing, but the good thing is that you collect 5 pieces of wood. Would you like to head deeper into the forest or head back to the lake?";
 			
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Go deeper into the forest";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s4");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s4')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Go back and head towards the lake";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s2");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s2')");
 			break;
 			case "s4":
 		
@@ -90,8 +74,7 @@ function updateScene(s) {
 			document.getElementById("btn1").innerHTML = "Skin the deer";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s8");
-				document.getElementById("ach2").innerHTML = "#2: Hunter?";
-				alert("Achievment 002: Hunter? More like tanner!");
+				
 			});
 			// change the second button
 			
@@ -101,7 +84,8 @@ function updateScene(s) {
 			});
 			break;
 			case "s5":
-		
+					document.getElementById("ach1").innerHTML = "#1: All Aboard!";
+					alert("Achievment 001: All Aboard! First time sailing? Good luck me matey!");
 			document.getElementById("scene_title").innerHTML = "Row-Row-Row you boat";
 			document.getElementById("scene_text").innerHTML = "After a few hours of intense rowing, you hear a crunch under your boat. As your boat starts to fill up with water, you suddenly realize that you are close to land";
 			
@@ -159,6 +143,8 @@ function updateScene(s) {
 			});
 			break;
 			case "s8":
+			document.getElementById("ach2").innerHTML = "#2: Hunter?";
+				alert("Achievment 002: Hunter? More like tanner!");
 			document.getElementById("scene_title").innerHTML = "Skinning the deer";
 			document.getElementById("scene_text").innerHTML = "Before you skin the deer, you see a black wormhole in the bush right next to it. Would you like to check the wormhole out?";
 			
