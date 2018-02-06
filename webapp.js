@@ -72,20 +72,19 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Skin the deer";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s8");
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s8')");
 				
-			});
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the deer";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s9");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s9')");
 			break;
 			case "s5":
+			
 					document.getElementById("ach1").innerHTML = "#1: All Aboard!";
 					alert("Achievment 001: All Aboard! First time sailing? Good luck me matey!");
+	
+					
 			document.getElementById("scene_title").innerHTML = "Row-Row-Row you boat";
 			document.getElementById("scene_text").innerHTML = "After a few hours of intense rowing, you hear a crunch under your boat. As your boat starts to fill up with water, you suddenly realize that you are close to land";
 			
@@ -94,9 +93,7 @@ function updateScene(s) {
 			document.getElementById("btn1").innerHTML = "Abandon the boat and swim to land";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s10");
-				document.getElementById("ach3").innerHTML = "#3: Olympic Swimmer";
-				alert("Achievment 003: Olympic Swimmer. Don't get eaten by sharks!");
-			});
+			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Fix the boat with you wood";
@@ -143,8 +140,11 @@ function updateScene(s) {
 			});
 			break;
 			case "s8":
+			
 			document.getElementById("ach2").innerHTML = "#2: Hunter?";
 				alert("Achievment 002: Hunter? More like tanner!");
+			});
+				
 			document.getElementById("scene_title").innerHTML = "Skinning the deer";
 			document.getElementById("scene_text").innerHTML = "Before you skin the deer, you see a black wormhole in the bush right next to it. Would you like to check the wormhole out?";
 			
@@ -179,6 +179,12 @@ function updateScene(s) {
 			});
 			break;
 			case "s10":
+			
+				document.getElementById("ach3").innerHTML = "#3: Olympic Swimmer";
+				alert("Achievment 003: Olympic Swimmer. Don't get eaten by sharks!");
+			});
+	
+			
 			document.getElementById("scene_title").innerHTML = "On the island";
 			document.getElementById("scene_text").innerHTML = "You finally reach the island. You are extremely exhausted and you see a cave. Would you like to sleep in the cave and start a fire or would you like to make your own shelter?";
 			
