@@ -9,7 +9,7 @@ function updateScene(s) {
 		case "start":
 		
 			document.getElementById("scene_title").innerHTML = "The Beginning";
-			document.getElementById("scene_text").innerHTML = "You wake up in the middle of a forest. You find a backpack containing a wooden sword, a linen tunic, and a flask of water. Will you continue deeper into the forest, or walk towards a nearby lake?";
+			document.getElementById("scene_text").innerHTML = "You wake up in the middle of a forest. You find a backpack containing a sword, a flashlight, and a flask of water. Will you continue deeper into the forest, or walk towards a nearby lake?";
 			
 			// change the first button
 			
@@ -48,7 +48,7 @@ function updateScene(s) {
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Ignore the boat and keep on walking";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s6')");
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s7')");
 			break;
 			case "s3":
 		
@@ -67,7 +67,7 @@ function updateScene(s) {
 			case "s4":
 		
 			document.getElementById("scene_title").innerHTML = "The Dead Deer Carcass";
-			document.getElementById("scene_text").innerHTML = "As you walk deeper into the forest, you find a dead deer carcass. Would you like to skin the deer with your sword?";
+			document.getElementById("scene_text").innerHTML = "As you walk deeper, you find a dead deer carcass. Would you like to skin the deer with your sword?";
 			
 			// change the first button
 			
@@ -91,34 +91,32 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Abandon the boat and swim to land";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s10");
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s10')");
 			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Fix the boat with you wood";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
-				document.getElementById("ach4").innerHTML = "#4:Carpenter";
-				alert("Achievment 004: Carpenter. ");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s6')");
+				
 			break;
 			case "s6":
-		
+			
+		document.getElementById("ach4").innerHTML = "#4: Carpenter";
+				alert("Achievment 004: Carpenter. ");
+				
 			document.getElementById("scene_title").innerHTML = "Fixing the Boat";
-			document.getElementById("scene_text").innerHTML = "You use your wood to fix your boat. You row for a few more minutes and see the island that you suspected to be near. Would you like to row your boat to shore";
+			document.getElementById("scene_text").innerHTML = "You use your wood to fix your boat. You row for a few more minutes and start to get exhausted but see the island that you suspected to be near. Would you like to row your boat to shore or start swimming to land";
 			
 			// change the first button
 			
-			document.getElementById("btn1").innerHTML = "Row to shore";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s10");
-			});
+			document.getElementById("btn1").innerHTML = "Swim to land";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s10')");
+			
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Keep Rowing";
+			document.getElementById("btn2").innerHTML = "Keep Rowing to the island";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
+				updateScene("s17");
 			});
 			break;
 			case "s7":
@@ -130,20 +128,20 @@ function updateScene(s) {
 			
 			document.getElementById("btn1").innerHTML = "Collect the wood";
 			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s10");
+				updateScene("s4");
 			});
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the wood";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
+				updateScene("s18");
 			});
 			break;
 			case "s8":
 			
 			document.getElementById("ach2").innerHTML = "#2: Hunter?";
 				alert("Achievment 002: Hunter? More like tanner!");
-			});
+
 				
 			document.getElementById("scene_title").innerHTML = "Skinning the deer";
 			document.getElementById("scene_text").innerHTML = "Before you skin the deer, you see a black wormhole in the bush right next to it. Would you like to check the wormhole out?";
@@ -173,17 +171,12 @@ function updateScene(s) {
 			});
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Jump into the wprmhole";
+			document.getElementById("btn2").innerHTML = "Jump into the wormhole";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s13");
 			});
 			break;
 			case "s10":
-			
-				document.getElementById("ach3").innerHTML = "#3: Olympic Swimmer";
-				alert("Achievment 003: Olympic Swimmer. Don't get eaten by sharks!");
-			});
-	
 			
 			document.getElementById("scene_title").innerHTML = "On the island";
 			document.getElementById("scene_text").innerHTML = "You finally reach the island. You are extremely exhausted and you see a cave. Would you like to sleep in the cave and start a fire or would you like to make your own shelter?";
@@ -235,23 +228,7 @@ function updateScene(s) {
 				updateScene("s6");
 			});
 			break;
-			case "s12":
-			document.getElementById("scene_title").innerHTML = "The Desperate Choice";
-			document.getElementById("scene_text").innerHTML = "You drop a rock that you found on the ground in the hole. You suddenly hear a growl that makes your blood run cold. Your heart beats rapidly as you slowly turn around. You see a bear!";
-			
-			// change the first button
-			
-			document.getElementById("btn1").innerHTML = "Jump into the wormhole";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s13");
-			});
-			// change the second button
-			
-			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
-			});
-			break;
+	
 			case "s13":
 			document.getElementById("scene_title").innerHTML = "The White Room";
 			document.getElementById("scene_text").innerHTML = "When you jump into the wormhole, you feel a strange sensation, as if you were flying. As you land on the cold, hard marble floor, you see a bright room with a bunch of strange-looking machinery.";
@@ -266,7 +243,7 @@ function updateScene(s) {
 			
 			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
+				updateScene("");
 			});
 			break;
 			
