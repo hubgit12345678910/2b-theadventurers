@@ -64,6 +64,7 @@ function updateScene(s) {
 			document.getElementById("btn2").innerHTML = "Go back and head towards the lake";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s2')");
 			break;
+			
 			case "s4":
 		
 			document.getElementById("scene_title").innerHTML = "The Dead Deer Carcass";
@@ -81,8 +82,8 @@ function updateScene(s) {
 			break;
 			case "s5":
 			
-					document.getElementById("ach1").innerHTML = "#1: All Aboard!";
-					alert("Achievment 001: All Aboard! First time sailing? Good luck me matey!");
+			document.getElementById("ach1").innerHTML = "#1: All Aboard!";
+			alert("Achievment 001: All Aboard! First time sailing? Good luck me matey!");
 	
 					
 			document.getElementById("scene_title").innerHTML = "Row-Row-Row you boat";
@@ -115,10 +116,10 @@ function updateScene(s) {
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Keep Rowing to the island";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s14");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s14')");
+			
 			break;
+			
 			case "s7":
 		
 			document.getElementById("scene_title").innerHTML = "Trekking on";
@@ -127,15 +128,11 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Collect the wood";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s4");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s4')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the wood";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s18");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s18')");
 			break;
 			case "s8":
 			
@@ -235,7 +232,7 @@ function updateScene(s) {
 			
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Ignore the dot";
+			document.getElementById("btn2").innerHTML = "Ignore the dot and inspect the area";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
 			
 			break;
@@ -248,10 +245,12 @@ function updateScene(s) {
 			
 			document.getElementById("btn1").innerHTML = "Climb to the top";
 			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Go back to the lake and build a boat to sail into the lake";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
+			
 			break;
 			
 	}
