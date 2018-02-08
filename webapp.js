@@ -101,7 +101,7 @@ function updateScene(s) {
 			break;
 			case "s6":
 			
-		document.getElementById("ach4").innerHTML = "#4: Carpenter";
+			document.getElementById("ach4").innerHTML = "#4: Carpenter";
 				alert("Achievment 004: Carpenter. ");
 				
 			document.getElementById("scene_title").innerHTML = "Fixing the Boat";
@@ -116,7 +116,7 @@ function updateScene(s) {
 			
 			document.getElementById("btn2").innerHTML = "Keep Rowing to the island";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s17");
+				updateScene("s14");
 			});
 			break;
 			case "s7":
@@ -140,7 +140,7 @@ function updateScene(s) {
 			case "s8":
 			
 			document.getElementById("ach2").innerHTML = "#2: Hunter?";
-				alert("Achievment 002: Hunter? More like tanner!");
+				alert("Achievment 002: Hunter");
 
 				
 			document.getElementById("scene_title").innerHTML = "Skinning the deer";
@@ -149,16 +149,14 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Shine you flashlight in the wormhole";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s11");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s11')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the deer";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s9");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s9')");
+			
 			break;
+			
 			case "s9":
 			document.getElementById("scene_title").innerHTML = "The wormhole";
 			document.getElementById("scene_text").innerHTML = "You slowly back away from the wormhole and continue deeper into the forest. You see another small wormhole on the ground. You hear whirring noises that might come from some sort of machine inside. What will you do?";
@@ -166,16 +164,15 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Drop a rock into the wormhole";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s12");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s12')");
+			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Jump into the wormhole";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s13");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s13')");
+			
 			break;
+			
 			case "s10":
 			
 			document.getElementById("scene_title").innerHTML = "On the island";
@@ -185,13 +182,13 @@ function updateScene(s) {
 			
 			document.getElementById("btn1").innerHTML = "Sleep in the cave";
 			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s10");
+				updateScene("s15");
 			});
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Make your own shelter";
+			document.getElementById("btn2").innerHTML = "Make your own shelter outside";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
+				updateScene("s16");
 			});
 			break;
 			case "s11":
@@ -201,16 +198,14 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Jump into the wormhole";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s13");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s13')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Drop a rock in and see what happens";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s12");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s12')");
+			
 			break;
+			
 			case "s12":
 			document.getElementById("scene_title").innerHTML = "The Desperate Choice";
 			document.getElementById("scene_text").innerHTML = "You drop a rock that you found on the ground in the hole. You suddenly hear a growl that makes your blood run cold. Your heart beats rapidly as you slowly turn around. You see a bear!";
@@ -218,33 +213,45 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Jump into the wormhole";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s13");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s13')");
+			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
+				updateScene("s");
+				
 			});
 			break;
 	
 			case "s13":
 			document.getElementById("scene_title").innerHTML = "The White Room";
-			document.getElementById("scene_text").innerHTML = "When you jump into the wormhole, you feel a strange sensation, as if you were flying. As you land on the cold, hard marble floor, you see a bright room with a bunch of strange-looking machinery.";
+			document.getElementById("scene_text").innerHTML = "When you jump into the wormhole, you feel a strange sensation, as if you were flying. As you land on the cold, hard marble floor, you see a bright room with a bunch of strange-looking machinery. Suddenly you see a red dot pointing at your chest. Will you look for where the dot is coming from or ignore it";
 			
 			// change the first button
 			
-			document.getElementById("btn1").innerHTML = "";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s13");
-			});
+			document.getElementById("btn1").innerHTML = "Look for the dot";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+			
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("");
-			});
+			document.getElementById("btn2").innerHTML = "Ignore the dot";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
+			
+			break;
+			
+			case "s14":
+			document.getElementById("scene_title").innerHTML = "Leaving the wood";
+			document.getElementById("scene_text").innerHTML = "After leaving the wood you trek for a few hours until running into a mountain range. If you climb to the top of the mountain range, you can probably see the entire forest and valley. Would you like to climb to the top?";
+			
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Climb to the top";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Go back to the lake and build a boat to sail into the lake";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
 			break;
 			
 	}
