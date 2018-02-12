@@ -96,7 +96,7 @@ function updateScene(s) {
 			
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Fix the boat with you wood";
+			document.getElementById("btn2").innerHTML = "Fix the boat with your wood";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s6')");
 				
 			break;
@@ -110,13 +110,13 @@ function updateScene(s) {
 			
 			// change the first button
 			
-			document.getElementById("btn1").innerHTML = "Swim to land";
+			document.getElementById("btn1").innerHTML = "Swim back to land";
 			document.getElementById("btn1").setAttribute("onclick", "updateScene('s10')");
 			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Keep Rowing to the island";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s14')");
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s15')");
 			
 			break;
 			
@@ -132,7 +132,7 @@ function updateScene(s) {
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the wood";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s18')");
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s14')");
 			break;
 			case "s8":
 			
@@ -179,13 +179,13 @@ function updateScene(s) {
 			
 			document.getElementById("btn1").innerHTML = "Sleep in the cave";
 			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s15");
+				updateScene("s");
 			});
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Make your own shelter outside";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s16");
+				updateScene("s");
 			});
 			break;
 			case "s11":
@@ -240,12 +240,12 @@ function updateScene(s) {
 			case "s14":
 			document.getElementById("scene_title").innerHTML = "Leaving the wood";
 			document.getElementById("scene_text").innerHTML = "After leaving the wood you trek for a few hours until running into a mountain range. If you climb to the top of the mountain range, you can probably see the entire forest and valley. Would you like to climb to the top?";
-			
+	
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Climb to the top";
 			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
-			
+						
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Go back to the lake and build a boat to sail into the lake";
@@ -253,5 +253,34 @@ function updateScene(s) {
 			
 			break;
 			
+				case "s15":
+			document.getElementById("scene_title").innerHTML = "Keep rowing to the island";
+			document.getElementById("scene_text").innerHTML = "After rowing, you are exhausted and can't row anymore. You suddenly hear a strange noise behind you. You realize that is it a wormhole. Do you jump into wormhole or ignore it?";
+	
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Jump into the wormhole";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s13')");
+						
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Ignore it";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s16')");
+			
+			break;
+			
+			case "s16":
+			document.getElementById("scene_title").innerHTML = "Ignoring the wormhole";
+			document.getElementById("scene_text").innerHTML = "Would you like to restart?";
+				alert("After ignoring and escaping the wormhole you die from exhaustion. THE END"); 
+				
+			document.getElementById("btn1").innerHTML = "Go to the starting screen";
+			document.getElementById("btn1").setAttribute("onclick", window.location.href = "index.html");
+			
+	
+			document.getElementById("btn2").innerHTML = "Go to the first scene";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('start')");
+			
+			break;
 	}
 }
