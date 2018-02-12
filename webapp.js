@@ -178,16 +178,13 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Sleep in the cave";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Make your own shelter outside";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s");
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
 			break;
+			
 			case "s11":
 			document.getElementById("scene_title").innerHTML = "The mysterious hole";
 			document.getElementById("scene_text").innerHTML = "You shine you flashlight in the hole. The beam disappears without a trace. No reflection, no trace, just gone.";
@@ -215,10 +212,7 @@ function updateScene(s) {
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s");
-				
-			});
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
 			break;
 	
 			case "s13":
@@ -253,7 +247,7 @@ function updateScene(s) {
 			
 			break;
 			
-				case "s15":
+			case "s15":
 			document.getElementById("scene_title").innerHTML = "Keep rowing to the island";
 			document.getElementById("scene_text").innerHTML = "After rowing, you are exhausted and can't row anymore. You suddenly hear a strange noise behind you. You realize that is it a wormhole. Do you jump into wormhole or ignore it?";
 	
@@ -264,23 +258,28 @@ function updateScene(s) {
 						
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Ignore it";
+			document.getElementById("btn2").innerHTML = "Ignoring the wormhole";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s16')");
 			
 			break;
 			
 			case "s16":
 			document.getElementById("scene_title").innerHTML = "Ignoring the wormhole";
-			document.getElementById("scene_text").innerHTML = "Would you like to restart?";
-				alert("After ignoring and escaping the wormhole you die from exhaustion. THE END"); 
+			document.getElementById("scene_text").innerHTML = "";
+				alert("After ignoring and escaping the wormhole you die from starvation, exhaustion and dehydration. THE END"); 
 				
 			document.getElementById("btn1").innerHTML = "Go to the starting screen";
 			document.getElementById("btn1").setAttribute("onclick", window.location.href = "index.html");
 			
-	
-			document.getElementById("btn2").innerHTML = "Go to the first scene";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('start')");
-			
 			break;
+			
+			case "s17":
+			document.getElementById("scene_title").innerHTML = "Running from the bear and the wormhole";
+			document.getElementById("scene_text").innerHTML = "";
+				
+				alert("You break into a full sprint and start running away from the bear. You weave around trees and try to lose the bear, but the bear is much faster than you. As you get eaten alive, you realize one important life lesson: Never try to outrun a bear!");
+			document.getElementById("btn1").innerHTML = "Go to the starting screen";
+			document.getElementById("btn1").setAttribute("onclick", window.location.href = "index.html");
+		
 	}
 }
