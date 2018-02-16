@@ -221,13 +221,13 @@ function updateScene(s) {
 			
 			// change the first button
 			
-			document.getElementById("btn1").innerHTML = "Look for the dot";
-			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+			document.getElementById("btn1").innerHTML = "Stand completely still";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s19')");
 			
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Ignore the dot and inspect the area";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s18')");
 			
 			break;
 			
@@ -280,6 +280,29 @@ function updateScene(s) {
 				alert("You break into a full sprint and start running away from the bear. You weave around trees and try to lose the bear, but the bear is much faster than you. As you get eaten alive, you realize one important life lesson: Never try to outrun a bear!");
 			document.getElementById("btn1").innerHTML = "Go to the starting screen";
 			document.getElementById("btn1").setAttribute("onclick", window.location.href = "index.html");
-		
+			
+			break;
+			
+			case "s18":
+			document.getElementById("scene_title").innerHTML = "Ignore the dot and inspect your surroundings";
+			document.getElementById("scene_text").innerHTML = "You slowly start to move around, trying to be as quiet as possible. The dot stays focused on your chest, moving as you move. You hear movement in the vents above you. You decide to look up and see a shadow holding what seems to be a gun. There are a few boxes separating you from the vents. Would you like to hide behind the box or stand still with your hands up?";
+	
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "Hide behind the box";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+						
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "Stand complety still";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s19')");
+			
+			break;
+			
+			
+			
+			
+			
+			
 	}
 }
