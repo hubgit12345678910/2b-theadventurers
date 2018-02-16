@@ -77,8 +77,8 @@ function updateScene(s) {
 				
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Leave the deer";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s9')");
+			document.getElementById("btn2").innerHTML = "Leave the deer and go towards the lake";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s2')");
 			break;
 			case "s5":
 			
@@ -128,7 +128,7 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Collect the wood";
-			document.getElementById("btn1").setAttribute("onclick", "updateScene('s4')");
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s14')");
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Leave the wood";
@@ -145,7 +145,7 @@ function updateScene(s) {
 			
 			// change the first button
 			
-			document.getElementById("btn1").innerHTML = "Shine you flashlight in the wormhole";
+			document.getElementById("btn1").innerHTML = "Shine your flashlight in the wormhole";
 			document.getElementById("btn1").setAttribute("onclick", "updateScene('s11')");
 			// change the second button
 			
@@ -232,8 +232,8 @@ function updateScene(s) {
 			break;
 			
 			case "s14":
-			document.getElementById("scene_title").innerHTML = "Leaving the wood";
-			document.getElementById("scene_text").innerHTML = "After leaving the wood you trek for a few hours until running into a mountain range. If you climb to the top of the mountain range, you can probably see the entire forest and valley. Would you like to climb to the top?";
+			document.getElementById("scene_title").innerHTML = "The mountain range";
+			document.getElementById("scene_text").innerHTML = "After trekking on few hours until running into a mountain range. If you climb to the top of the mountain range, you can probably see the entire forest and valley. Would you like to climb to the top?";
 	
 			// change the first button
 			
