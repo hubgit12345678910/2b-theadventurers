@@ -123,7 +123,7 @@ function updateScene(s) {
 			case "s7":
 		
 			document.getElementById("scene_title").innerHTML = "Trekking on";
-			document.getElementById("scene_text").innerHTML = "As you walk past the boat, you head an explosion behind you. You look behind you and realize it was the boat. Would you like to collect the wood?";
+			document.getElementById("scene_text").innerHTML = "As you walk past the boat, you hear a deafening splash. When you look back, a huge fish jumps from under the boat, breaks it, and pieces of broken wood behind. Would you like to collect the wood?";
 			
 			// change the first button
 			
@@ -136,7 +136,7 @@ function updateScene(s) {
 			break;
 			case "s8":
 			
-			document.getElementById("ach2").innerHTML = "#2: Hunter?";
+			document.getElementById("ach2").innerHTML = "#2: Hunter";
 				alert("Achievment 002: Hunter");
 
 				
@@ -187,7 +187,7 @@ function updateScene(s) {
 			
 			case "s11":
 			document.getElementById("scene_title").innerHTML = "The mysterious hole";
-			document.getElementById("scene_text").innerHTML = "You shine you flashlight in the hole. The beam disappears without a trace. No reflection, no trace, just gone.";
+			document.getElementById("scene_text").innerHTML = "You shine your flashlight in the hole. The beam disappears without a trace. No reflection, no trace, just gone.";
 			
 			// change the first button
 			
@@ -212,7 +212,7 @@ function updateScene(s) {
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Run from the bear and the wormhole";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s17')");
 			break;
 	
 			case "s13":
@@ -222,7 +222,7 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Stand completely still";
-			document.getElementById("btn1").setAttribute("onclick", "updateScene('s19')");
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s20')");
 			
 			// change the second button
 			
@@ -238,12 +238,12 @@ function updateScene(s) {
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Climb to the top";
-			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s21')");
 						
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Go back to the lake and build a boat to sail into the lake";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s19')");
 			
 			break;
 			
@@ -258,7 +258,7 @@ function updateScene(s) {
 						
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Ignoring the wormhole";
+			document.getElementById("btn2").innerHTML = "Ignore the wormhole";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s16')");
 			
 			break;
@@ -277,13 +277,15 @@ function updateScene(s) {
 			document.getElementById("scene_title").innerHTML = "Running from the bear and the wormhole";
 			document.getElementById("scene_text").innerHTML = "";
 				
-				alert("You break into a full sprint and start running away from the bear. You weave around trees and try to lose the bear, but the bear is much faster than you. As you get eaten alive, you realize one important life lesson: Never try to outrun a bear!");
+				alert("You break into a full sprint and start running away from the bear. You weave around trees and try to lose the bear, but the bear is much faster than you. As you get eaten alive, you realize one important life lesson: Never try to outrun a bear! THE END!");
 			document.getElementById("btn1").innerHTML = "Go to the starting screen";
 			document.getElementById("btn1").setAttribute("onclick", window.location.href = "index.html");
 			
 			break;
 			
 			case "s18":
+				document.getElementById("ach5").innerHTML = "#5: Getting fearless?";
+				alert("Achievment 005: Fearless. ");
 			document.getElementById("scene_title").innerHTML = "Ignore the dot and inspect your surroundings";
 			document.getElementById("scene_text").innerHTML = "You slowly start to move around, trying to be as quiet as possible. The dot stays focused on your chest, moving as you move. You hear movement in the vents above you. You decide to look up and see a shadow holding what seems to be a gun. There are a few boxes separating you from the vents. Would you like to hide behind the box or stand still with your hands up?";
 	
@@ -294,15 +296,57 @@ function updateScene(s) {
 						
 			// change the second button
 			
-			document.getElementById("btn2").innerHTML = "Stand complety still";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s19')");
+			document.getElementById("btn2").innerHTML = "Stand completly still";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s20')");
 			
 			break;
 			
+			case "s19":
+				
+			document.getElementById("scene_title").innerHTML = "Go back to the lake and build a boat";
+			document.getElementById("scene_text").innerHTML = "After going back to the lake and taking the wood that was left behind, you start to build a boat. After working on building the boat for a few hours, you lose 5 pieces of wood. Would you like to go back to the forest, or ride the boat into the lake.";
+	
+			// change the first button
 			
+			document.getElementById("btn1").innerHTML = "Back to the forest";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s1')");
+						
+			// change the second button
 			
+			document.getElementById("btn2").innerHTML = "Riding the boat";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s5')");
 			
+			break;
 			
+			case "s20":
+				
+			document.getElementById("scene_title").innerHTML = "Standing completely still";
+			document.getElementById("scene_text").innerHTML = "";
+		alert("After standing completely still you hear a loud BANG. You start to run and you hear another BANG. You quickly look to the side and your life flashes before your eyes as a bullet is headed straight for you. All of a sudden, you can't feel your chest. You look down and a blood is pouring down your body. You realize, the bullet has hit you. THE END"); 
+				
+			document.getElementById("btn1").innerHTML = "Go to the starting screen";
+			document.getElementById("btn1").setAttribute("onclick", window.location.href = "index.html");
+			break;
 			
+			case "s21":
+			
+				document.getElementById("ach6").innerHTML = "#6: Climbing like a hiker?";
+				alert("Achievment 006: Hiker. ");
+				
+			document.getElementById("scene_title").innerHTML = "Climbing the mountain";
+			document.getElementById("scene_text").innerHTML = "";
+	
+			// change the first button
+			
+			document.getElementById("btn1").innerHTML = "";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+						
+			// change the second button
+			
+			document.getElementById("btn2").innerHTML = "";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('s')");
+			
+			break;
+	
 	}
 }
