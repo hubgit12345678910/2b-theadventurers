@@ -21,7 +21,7 @@ function updateScene(s) {
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s2')");
 			break;
 		case "s1":
-		
+			document.body.style.backgroundImage = "url('images/axe.jpg')";
 			document.getElementById("scene_title").innerHTML = "The rusty stone axe";
 			document.getElementById("scene_text").innerHTML = "As you venture deeper into the forest, you find a rusty, stone axe. Do you wish to chop down some trees?";
 	
@@ -36,6 +36,10 @@ function updateScene(s) {
 	
 			break;
 		case "s2":
+		document.body.style.backgroundImage = "url('images/Canoe_Lake.jpg')";
+		document.getElementById("wrapper").style.color = "black";
+			document.getElementById("scene_text").style.color = "black";
+		
 			document.getElementById("scene_title").innerHTML = "The little canoe";
 			document.getElementById("scene_text").innerHTML = "As you walk towards the lake, you see a little canoe with oars. Do you wish to steer the boat into the lake?";
 			
@@ -51,7 +55,7 @@ function updateScene(s) {
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s7')");
 			break;
 			case "s3":
-		
+			document.body.style.backgroundImage = "url('images/trees.jpg')";
 			document.getElementById("scene_title").innerHTML = "Chopping down the trees";
 			document.getElementById("scene_text").innerHTML = "When you finish chopping down the trees, your hands feel burned and they are throbbing, but the good thing is that you collect 5 pieces of wood. Would you like to head deeper into the forest or head back to the lake?";
 			
@@ -66,7 +70,7 @@ function updateScene(s) {
 			break;
 			
 			case "s4":
-		
+				document.body.style.backgroundImage = "url('images/deer.jpg')";
 			document.getElementById("scene_title").innerHTML = "The Dead Deer Carcass";
 			document.getElementById("scene_text").innerHTML = "As you walk deeper, you find a dead deer carcass. Would you like to skin the deer with your sword?";
 			
@@ -85,7 +89,7 @@ function updateScene(s) {
 			document.getElementById("ach1").innerHTML = "#1: All Aboard!";
 			alert("Achievment 001: All Aboard! First time sailing? Good luck me matey!");
 	
-					
+					document.body.style.backgroundImage = "url('images/broken-conoe.jpg')";	
 			document.getElementById("scene_title").innerHTML = "Row-Row-Row you boat";
 			document.getElementById("scene_text").innerHTML = "After a few hours of intense rowing, you hear a crunch under your boat. As your boat starts to fill up with water, you suddenly realize that you are close to land";
 			
@@ -104,7 +108,7 @@ function updateScene(s) {
 			
 			document.getElementById("ach4").innerHTML = "#4: Carpenter";
 				alert("Achievment 004: Carpenter. ");
-				
+						document.body.style.backgroundImage = "url('images/island.jpg')";
 			document.getElementById("scene_title").innerHTML = "Fixing the Boat";
 			document.getElementById("scene_text").innerHTML = "You use your wood to fix your boat. You row for a few more minutes and start to get exhausted but see the island that you suspected to be near. Would you like to row your boat to shore or start swimming to land";
 			
@@ -121,7 +125,7 @@ function updateScene(s) {
 			break;
 			
 			case "s7":
-		
+			document.body.style.backgroundImage = "url('images/fishy.jpg')";
 			document.getElementById("scene_title").innerHTML = "Trekking on";
 			document.getElementById("scene_text").innerHTML = "As you walk past the boat, you hear a deafening splash. When you look back, a huge fish jumps from under the boat, breaks it, and pieces of broken wood behind. Would you like to collect the wood?";
 			
@@ -139,7 +143,7 @@ function updateScene(s) {
 			document.getElementById("ach2").innerHTML = "#2: Hunter";
 				alert("Achievment 002: Hunter");
 
-				
+						document.body.style.backgroundImage = "url('images/wormhole.jpg')";
 			document.getElementById("scene_title").innerHTML = "Skinning the deer";
 			document.getElementById("scene_text").innerHTML = "Before you skin the deer, you see a black wormhole in the bush right next to it. Would you like to check the wormhole out?";
 			
@@ -155,6 +159,7 @@ function updateScene(s) {
 			break;
 			
 			case "s9":
+					document.body.style.backgroundImage = "url('images/small-wormhole.jpg')";
 			document.getElementById("scene_title").innerHTML = "The wormhole";
 			document.getElementById("scene_text").innerHTML = "You slowly back away from the wormhole and continue deeper into the forest. You see another small wormhole on the ground. You hear whirring noises that might come from some sort of machine inside. What will you do?";
 			
@@ -171,14 +176,14 @@ function updateScene(s) {
 			break;
 			
 			case "s10":
-			
+				document.body.style.backgroundImage = "url('images/island.jpg')";
 			document.getElementById("scene_title").innerHTML = "On the island";
 			document.getElementById("scene_text").innerHTML = "You finally reach the island. You are extremely exhausted and you see a cave. Would you like to sleep in the cave and start a fire or would you like to make your own shelter?";
 			
 			// change the first button
 			
 			document.getElementById("btn1").innerHTML = "Sleep in the cave";
-			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s')");//	document.body.style.backgroundImage = "url('images/cave.jpg')"; add this to change background
 			// change the second button
 			
 			document.getElementById("btn2").innerHTML = "Make your own shelter outside";
@@ -186,6 +191,8 @@ function updateScene(s) {
 			break;
 			
 			case "s11":
+					document.body.style.backgroundImage = "url('images/wormhole.jpg')";
+							document.body.style.backgroundImage = "url('images/wormhole.jpg')";
 			document.getElementById("scene_title").innerHTML = "The mysterious hole";
 			document.getElementById("scene_text").innerHTML = "You shine your flashlight in the hole. The beam disappears without a trace. No reflection, no trace, just gone.";
 			
@@ -201,6 +208,7 @@ function updateScene(s) {
 			break;
 			
 			case "s12":
+					document.body.style.backgroundImage = "url('images/bear.jpg')";
 			document.getElementById("scene_title").innerHTML = "The Desperate Choice";
 			document.getElementById("scene_text").innerHTML = "You drop a rock that you found on the ground in the hole. You suddenly hear a growl that makes your blood run cold. Your heart beats rapidly as you slowly turn around. You see a bear!";
 			
@@ -216,6 +224,7 @@ function updateScene(s) {
 			break;
 	
 			case "s13":
+					document.body.style.backgroundImage = "url('white.jpg')";
 			document.getElementById("scene_title").innerHTML = "The White Room";
 			document.getElementById("scene_text").innerHTML = "When you jump into the wormhole, you feel a strange sensation, as if you were flying. As you land on the cold, hard marble floor, you see a bright room with a bunch of strange-looking machinery. Suddenly you see a red dot pointing at your chest. Will you look for where the dot is coming from or ignore it";
 			
@@ -232,6 +241,7 @@ function updateScene(s) {
 			break;
 			
 			case "s14":
+				document.body.style.backgroundImage = "url('images/mountian.jpg')";
 			document.getElementById("scene_title").innerHTML = "The mountain range";
 			document.getElementById("scene_text").innerHTML = "After trekking on few hours until running into a mountain range. If you climb to the top of the mountain range, you can probably see the entire forest and valley. Would you like to climb to the top?";
 	
@@ -248,6 +258,7 @@ function updateScene(s) {
 			break;
 			
 			case "s15":
+					document.body.style.backgroundImage = "url('images/wormhole.jpg')";
 			document.getElementById("scene_title").innerHTML = "Keep rowing to the island";
 			document.getElementById("scene_text").innerHTML = "After rowing, you are exhausted and can't row anymore. You suddenly hear a strange noise behind you. You realize that is it a wormhole. Do you jump into wormhole or ignore it?";
 	
@@ -264,6 +275,7 @@ function updateScene(s) {
 			break;
 			
 			case "s16":
+					document.body.style.backgroundImage = "url('images/gameover.jpg')";
 			document.getElementById("scene_title").innerHTML = "Ignoring the wormhole";
 			document.getElementById("scene_text").innerHTML = "";
 				alert("After ignoring and escaping the wormhole you die from starvation, exhaustion and dehydration. THE END"); 
@@ -274,6 +286,7 @@ function updateScene(s) {
 			break;
 			
 			case "s17":
+					document.body.style.backgroundImage = "url('images/gameover.jpg')";
 			document.getElementById("scene_title").innerHTML = "Running from the bear and the wormhole";
 			document.getElementById("scene_text").innerHTML = "";
 				
@@ -284,6 +297,7 @@ function updateScene(s) {
 			break;
 			
 			case "s18":
+					document.body.style.backgroundImage = "url('images/vent.jpg')";//I could not find anything better
 				document.getElementById("ach5").innerHTML = "#5: Getting fearless?";
 				alert("Achievment 005: Fearless. ");
 			document.getElementById("scene_title").innerHTML = "Ignore the dot and inspect your surroundings";
@@ -302,7 +316,9 @@ function updateScene(s) {
 			break;
 			
 			case "s19":
-				
+					document.body.style.backgroundImage = "url('images/boat.jpg')";
+						document.getElementById("wrapper").style.color = "white";
+			document.getElementById("scene_text").style.color = "white";
 			document.getElementById("scene_title").innerHTML = "Go back to the lake and build a boat";
 			document.getElementById("scene_text").innerHTML = "After going back to the lake and taking the wood that was left behind, you start to build a boat. After working on building the boat for a few hours, you lose 5 pieces of wood. Would you like to go back to the forest, or ride the boat into the lake.";
 	
@@ -319,7 +335,7 @@ function updateScene(s) {
 			break;
 			
 			case "s20":
-				
+						document.body.style.backgroundImage = "url('images/gameover.jpg')";
 			document.getElementById("scene_title").innerHTML = "Standing completely still";
 			document.getElementById("scene_text").innerHTML = "";
 		alert("After standing completely still you hear a loud BANG. You start to run and you hear another BANG. You quickly look to the side and your life flashes before your eyes as a bullet is headed straight for you. All of a sudden, you can't feel your chest. You look down and a blood is pouring down your body. You realize, the bullet has hit you. THE END"); 
@@ -329,7 +345,7 @@ function updateScene(s) {
 			break;
 			
 			case "s21":
-			
+					document.body.style.backgroundImage = "url('images/mountiantop.jpg')";
 				document.getElementById("ach6").innerHTML = "#6: Climbing like a hiker?";
 				alert("Achievment 006: Hiker. ");
 				
